@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper scaling and rendering on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the document mode to edge mode in IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link to Bootstrap CSS for responsive design and styling -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Link to Google Fonts for custom font styling -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to custom CSS for additional styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title of the webpage -->
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <!-- Page header with a jumbotron for prominent display of the title and description -->
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Placeholder for dynamically displaying the current day -->
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <!-- Container for time blocks representing each hour of the workday -->
+    <div class="container">
+      <!-- Individual time block for 9 AM -->
+      <div class="row time-block">
+        <div class="col-sm-1 hour" id="1">9 AM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <!-- Repeat for each subsequent hour (10 AM to 5 PM) -->
+      <div class="row time-block">
+        <div class="col-sm-1 hour" id="2">10 AM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour" id="3">11 AM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour" id="4">12 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour">1 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour">2 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour">3 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-sm-1 hour">4 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div> 
+      <div class="row time-block">
+        <div class="col-sm-1 hour">5 PM</div>
+        <textarea class="col-sm-10 description future"></textarea>
+        <button class="col-sm-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+
+    <!-- jQuery library for DOM manipulation and event handling -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Moment.js library for date and time manipulation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
